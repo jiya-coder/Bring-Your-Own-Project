@@ -24,3 +24,13 @@ class BankAccount {
             System.out.println("Insufficient balance!");
         }
     }
+
+    void display() {
+        String accStr = String.valueOf(accountNumber);
+        String masked = "XXXXXX" + accStr.substring(accStr.length() - 4);
+
+        System.out.println("\nAccount Holder: " + name);
+        System.out.println("Account Number: " + masked);
+        System.out.println("Balance: " + balance);
+    }
+}
