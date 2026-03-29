@@ -34,3 +34,19 @@ class BankAccount {
         System.out.println("Balance: " + balance);
     }
 }
+public class BankAccountSystem {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter your name: ");
+        String name = sc.nextLine();
+
+        System.out.print("Enter account number: ");
+        int accNo = sc.nextInt();
+
+        System.out.print("Enter initial balance: ");
+        double balance = sc.nextDouble();
+
+        BankAccount acc = new BankAccount(name, accNo, balance);
+
+        int choice;
